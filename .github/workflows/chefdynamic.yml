@@ -32,7 +32,6 @@ jobs:
             sudo chmod -R 777 ErfanGSIs
             cd ErfanGSIs
             sudo bash setup.sh 
-            pip install pyrogram tgcrypto
             
         - name: DOWNLOADING THE FIRMWARE
           run: cd ErfanGSIs && sudo wget $ROM_URL 
