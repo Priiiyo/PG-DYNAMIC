@@ -1,7 +1,8 @@
 name: Time to Bake...
 on: push
-#######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
+#######################   CHANGE ONLY TG_NAME,ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
+  TG_NAME: "OnePlus Nord"
   ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/NordOxygen/NordOxygen_14.O.11_GLO_011_2010232026/NordOxygen_14.O.11_OTA_011_all_2010232026_83bb980e97.zip
   ROM_NAME: OxygenOS
   FIRMWAREZIPNAME: NordOxygen_14.O.11_OTA_011_all_2010232026_83bb980e97.zip
