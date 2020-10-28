@@ -53,9 +53,6 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
-        - name: uploading to AMYBAKERY
+        - name: Upload to AMYBAKERY
           run: |   
-              cd ErfanGSIs/output   
-              curl -sL https://git.io/file-transfer | sh    
-              ./transfer $MIR "$ZIP_NAME-GSI-Aonly.7z" | grep -o -P '(?<=Download Link: )\S+')
-              ./transfer $MIR "$ZIP_NAME-GSI-AB.7z" | grep -o -P '(?<=Download Link: )\S+')
+              upload.sh
