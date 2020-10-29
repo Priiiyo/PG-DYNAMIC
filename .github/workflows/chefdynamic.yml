@@ -57,4 +57,5 @@ jobs:
         - name: Upload to AMYBAKERY
           run: |
               cd $GITHUB_WORKSPACE   
+              chmod 777 upload.sh
               ./upload.sh
