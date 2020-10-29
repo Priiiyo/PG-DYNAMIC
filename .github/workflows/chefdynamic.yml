@@ -55,5 +55,6 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
         - name: Upload to AMYBAKERY
-          run: |   
-              upload.sh
+          run: |
+              cd $GITHUB_WORKSPACE   
+              ./upload.sh
