@@ -10,6 +10,10 @@ env:
   SCRIPT_NAME: OOSDP
   TZ: Europe/London
   MIR: wet
+  SFDIRA1: cd /home/pfs/project/amyGSI/
+  SFDIRA2: cd /home/pfs/project/amyGSI
+  SFUSER: ${{ secrets.SFUSER }}
+  SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   
 jobs:
     build:
@@ -54,8 +58,45 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
-        - name: Upload to AMYBAKERY
-          run: |
-              cd $GITHUB_WORKSPACE   
-              chmod 777 upload.sh
-              ./upload.sh
+        - name: Uploading to AMYBAKERY
+          run: |   
+              cd ErfanGSIs/output
+              expect -c " 
+              spawn sftp amygsi@frs.sourceforge.net
+              expect \"yes/no\"
+              send \"yes\r\"
+              expect \"Password\"        
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA2\r\"
+              set timeout -1
+              send \"put *-Aonly-*.txt\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              interact"
+              expect -c "
+              spawn sftp amygsigsi@frs.sourceforge.net
+              expect \"Password\"
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA1\r\"
+              set timeout -1
+              send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              interact"
+              expect -c "
+              spawn sftp amygsi@frs.sourceforge.net
+              expect \"Password\"
+              send \"${{ secrets.SFGPASS }}\r\"
+              expect \"sftp> \"
+              send \"$SFDIRA1\r\"
+              set timeout -1
+              send \"put $ZIP_NAME-GSI-AB.7z\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              send \"bye\r\"
+              interact"
