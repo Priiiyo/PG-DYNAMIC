@@ -76,7 +76,7 @@ jobs:
               expect \"sftp>\"
               interact"
               expect -c "
-              spawn sftp amygsigsi@frs.sourceforge.net
+              spawn sftp amygsi@frs.sourceforge.net
               expect \"Password\"
               send \"${{ secrets.SFGPASS }}\r\"
               expect \"sftp> \"
