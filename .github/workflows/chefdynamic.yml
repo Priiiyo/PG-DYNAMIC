@@ -10,8 +10,8 @@ env:
   SCRIPT_NAME: OOSDP
   TZ: Europe/London
   MIR: wet
-  SFDIRA1: cd /home/pfs/project/amyGSI/
-  SFDIRA2: cd /home/pfs/project/amyGSI
+  SFDIRA1: cd /home/frs/project/amyGSI
+  SFDIRA2: cd /home/frs/project/amyGSI
   SFUSER: ${{ secrets.SFUSER }}
   SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
   
