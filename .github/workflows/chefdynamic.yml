@@ -1,19 +1,23 @@
-name: Time to Bake...
-on: push
-#######################   CHANGE ONLY TG_NAME,ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
+name: TIME TO BUILD...
+on: 
+  #releasepush:
+    #pushbuild
+  watch: 
+      types: [started]
+#######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
   TG_NAME: "OnePlus Nord"
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/NordOxygen/NordOxygen_14.O.11_GLO_011_2010232026/NordOxygen_14.O.11_OTA_011_all_2010232026_83bb980e97.zip
+  ROM_URL: https://oxygenos.oneplus.net/NordOxygen_14.O.12_OTA_012_all_2012212243_2ef9ca6007a245c0.zip
   ROM_NAME: OxygenOS
-  FIRMWAREZIPNAME: NordOxygen_14.O.11_OTA_011_all_2010232026_83bb980e97.zip
-  ZIP_NAME: OXYGENOSNORDLATEST-AMY-28-10
+  FIRMWAREZIPNAME: NordOxygen_14.O.12_OTA_012_all_2012212243_2ef9ca6007a245c0.zip
+  ZIP_NAME: OXYGENOS-Nord-@PriyoGSI-14-01-2021
   SCRIPT_NAME: OOSDP
-  TZ: Europe/London
+  TZ: Asia/Bangladesh
   MIR: wet
   SFDIRA1: cd /home/frs/project/amyGSI
   SFDIRA2: cd /home/frs/project/amyGSI
   SFUSER: ${{ secrets.SFUSER }}
-  SECRETS_PASSWORD: ${{ secrets.SFGPASS }}
+  SECRETS_PASSWORD: ${{ secrets.SFPASS }}
   
 jobs:
     build:
@@ -32,7 +36,7 @@ jobs:
             sudo -E apt-get -qq install python3
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
-            git clone "https://github.com/amyGSI/AmyBakerTools" ErfanGSIs
+            git clone "https://github.com/Priiiyo/PGTools-ErfanGSIs" ErfanGSIs
             sudo chmod -R 777 ErfanGSIs
             cd ErfanGSIs
             sudo bash setup.sh 
@@ -58,15 +62,15 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
-        - name: Uploading to AMYBAKERY
+        - name: Uploading to PRIYOFILES
           run: |   
               cd ErfanGSIs/output
               expect -c " 
-              spawn sftp amygsi@frs.sourceforge.net
+              spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"yes/no\"
               send \"yes\r\"
               expect \"Password\"        
-              send \"${{ secrets.SFGPASS }}\r\"
+              send \"${{ secrets.SFPASS }}\r\"
               expect \"sftp> \"
               send \"$SFDIRA2\r\"
               set timeout -1
@@ -76,25 +80,25 @@ jobs:
               expect \"sftp>\"
               interact"
               expect -c "
-              spawn sftp amygsi@frs.sourceforge.net
+              spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"Password\"
-              send \"${{ secrets.SFGPASS }}\r\"
+              send \"${{ secrets.SFPASS }}\r\"
               expect \"sftp> \"
               send \"$SFDIRA1\r\"
               set timeout -1
-              send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
+              send \"put $ZIP_NAME-GSI-Aonly-@PriyoGSI.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
               interact"
               expect -c "
-              spawn sftp amygsi@frs.sourceforge.net
+              spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
               expect \"Password\"
-              send \"${{ secrets.SFGPASS }}\r\"
+              send \"${{ secrets.SFPASS }}\r\"
               expect \"sftp> \"
               send \"$SFDIRA1\r\"
               set timeout -1
-              send \"put $ZIP_NAME-GSI-AB.7z\r\"
+              send \"put $ZIP_NAME-GSI-AB-@PriyoGSi.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
