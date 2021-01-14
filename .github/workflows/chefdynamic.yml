@@ -14,8 +14,8 @@ env:
   SCRIPT_NAME: OOSDP
   TZ: Asia/Bangladesh
   MIR: wet
-  SFDIRA1: cd /home/frs/project/amyGSI
-  SFDIRA2: cd /home/frs/project/amyGSI
+  SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
+  SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
   SFUSER: ${{ secrets.SFUSER }}
   SECRETS_PASSWORD: ${{ secrets.SFPASS }}
   
