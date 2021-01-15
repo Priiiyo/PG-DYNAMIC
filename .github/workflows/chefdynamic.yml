@@ -6,12 +6,12 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  TG_NAME: "Aris"
-  ROM_URL: https://android.googleapis.com/packages/ota-api/package/d79c90d8f94a249e0e91726c89d1460478487a2a.zip
-  ROM_NAME: VOS
-  FIRMWAREZIPNAME: d79c90d8f94a249e0e91726c89d1460478487a2a.zip
-  ZIP_NAME: VOS--@PriyoGSI-14-01-2021
-  SCRIPT_NAME: NUBIA-VOS-MIUIDP
+  TG_NAME: "Pixel 3a"
+  ROM_URL: https://dl.google.com/dl/android/aosp/sargo-rq1a.210105.002-factory-48e2ceb8.zip
+  ROM_NAME: Pixel
+  FIRMWAREZIPNAME: sargo-rq1a.210105.002-factory-48e2ceb8.zip
+  ZIP_NAME: Pixel-3a-@PriyoGSI-16-01-2021
+  SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   MIR: wet
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
