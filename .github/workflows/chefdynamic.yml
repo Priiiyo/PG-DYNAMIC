@@ -6,12 +6,12 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  TG_NAME: "OnePlus Nord"
-  ROM_URL: https://oxygenos.oneplus.net/NordOxygen_14.O.12_OTA_012_all_2012212243_2ef9ca6007a245c0.zip
-  ROM_NAME: OxygenOS
-  FIRMWAREZIPNAME: NordOxygen_14.O.12_OTA_012_all_2012212243_2ef9ca6007a245c0.zip
-  ZIP_NAME: OXYGENOS-Nord-@PriyoGSI-14-01-2021
-  SCRIPT_NAME: OOSDP
+  TG_NAME: "Aris"
+  ROM_URL: https://android.googleapis.com/packages/ota-api/package/d79c90d8f94a249e0e91726c89d1460478487a2a.zip
+  ROM_NAME: VOS
+  FIRMWAREZIPNAME: d79c90d8f94a249e0e91726c89d1460478487a2a.zip
+  ZIP_NAME: VOS--@PriyoGSI-14-01-2021
+  SCRIPT_NAME: NUBIA-VOS-MIUIDP
   TZ: Asia/Bangladesh
   MIR: wet
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
