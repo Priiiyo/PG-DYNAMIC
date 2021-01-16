@@ -62,7 +62,7 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img 
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               
-        - name: Uploading to PRIYOFILES
+        - name: uploading to PRIYOFILES
           run: |   
               cd ErfanGSIs/output
               expect -c " 
@@ -72,7 +72,7 @@ jobs:
               expect \"Password\"        
               send \"${{ secrets.SFPASS }}\r\"
               expect \"sftp> \"
-              send \"$SFDIRA2\r\"
+              send \"${{ secrets.SFDIRA2 }}\r\"
               set timeout -1
               send \"put *-Aonly-*.txt\r\"
               expect \"Uploading\"
@@ -84,7 +84,7 @@ jobs:
               expect \"Password\"
               send \"${{ secrets.SFPASS }}\r\"
               expect \"sftp> \"
-              send \"$SFDIRA1\r\"
+              send \"${{ secrets.SFDIRA1 }}\r\"
               set timeout -1
               send \"put $ZIP_NAME-GSI-Aonly-@PriyoGSI.7z\r\"
               expect \"Uploading\"
@@ -96,11 +96,11 @@ jobs:
               expect \"Password\"
               send \"${{ secrets.SFPASS }}\r\"
               expect \"sftp> \"
-              send \"$SFDIRA1\r\"
+              send \"${{ secrets.SFDIRA1 }}\r\"
               set timeout -1
-              send \"put $ZIP_NAME-GSI-AB-@PriyoGSi.7z\r\"
+              send \"put $ZIP_NAME-GSI-AB-@PriyoGSI.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
               send \"bye\r\"
-              interact"
+              interact"  
