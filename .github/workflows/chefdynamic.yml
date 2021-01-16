@@ -1,4 +1,4 @@
-name: TIME TO BUILD....
+name: TIME TO BUILD...
 on: 
   #releasepush:
     #pushbuild
@@ -6,7 +6,6 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  TG_NAME: "Pixel 3a"
   ROM_URL: https://dl.google.com/dl/android/aosp/sargo-rq1a.210105.002-factory-48e2ceb8.zip
   ROM_NAME: Pixel
   FIRMWAREZIPNAME: sargo-rq1a.210105.002-factory-48e2ceb8.zip
@@ -85,7 +84,7 @@ jobs:
               expect \"sftp> \"
               send \"${{ secrets.SFDIRA1 }}\r\"
               set timeout -1
-              send \"put $ZIP_NAME-GSI-Aonly-@PriyoGSI.7z\r\"
+              send \"put $ZIP_NAME-GSI-Aonly-priyogsi.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
@@ -97,7 +96,7 @@ jobs:
               expect \"sftp> \"
               send \"${{ secrets.SFDIRA1 }}\r\"
               set timeout -1
-              send \"put $ZIP_NAME-GSI-AB-@PriyoGSI.7z\r\"
+              send \"put $ZIP_NAME-GSI-AB-priyogsi.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
