@@ -13,7 +13,6 @@ env:
   ZIP_NAME: Pixel-3a-@PriyoGSI-16-01-2021
   SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
-  MIR: wet
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
   SFUSER: ${{ secrets.SFUSER }}
