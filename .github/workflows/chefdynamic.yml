@@ -6,11 +6,11 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/sargo-rq1a.210105.002-factory-48e2ceb8.zip
-  ROM_NAME: Pixel
-  FIRMWAREZIPNAME: sargo-rq1a.210105.002-factory-48e2ceb8.zip
-  ZIP_NAME: Pixel-3a-@PriyoGSI-17-01-2021
-  SCRIPT_NAME: PIXELDP
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus7TOxygen_14.O.21_OTA_021_all_2011052319_c7d44b2dcf46471e.zip
+  ROM_NAME: OxygenOS7T
+  FIRMWAREZIPNAME: OnePlus7TOxygen_14.O.21_OTA_021_all_2011052319_c7d44b2dcf46471e.zip
+  ZIP_NAME: OxygenOS-Op7T-@PriyoGSI-17-01-2021
+  SCRIPT_NAME: OOSDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
