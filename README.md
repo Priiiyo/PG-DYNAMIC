@@ -1,4 +1,4 @@
-                                *AmyBaker* Dynamic This Project should not be shared with *others*. those have given access can **Bake**
+                                *PGTools* Dynamic This Project should not be shared with *others*. those have given access can **Build**
 
 ### INSTRUCTIONS ABOUT USING THIS TOOL: ###
 ### you should change the following env from the workflow : ###
@@ -12,7 +12,7 @@ SUPPORTED OEM LIST
 | ----------------------- |
 | 1.MIUI                  |  
 | 2.MIUI ANDROID 11       |
-| 3.PIXEL                 |                                                         
+| 3.PIXEL 11              |                                                         
 | 4.NUBIA                 |
 | 5.VOS                   |                              
 | 6.ZENUI                 |
@@ -30,7 +30,7 @@ SCRIPT NAME TO BE USED EXACTLY LIKE THIS IN THE WORKFLOW
 | 6.ZenUIDP        {Use with Asus phones with DP}      |
 
 For OnePlus device use the following 
-| -------------------------------- |
+| --------------------------------   |
 |ROM_NAME: OxygenOS7T  {for op7t}    |
 |ROM_NAME: Oxygen7TPRO  {for op7tpro}|
 |ROM_NAME: Oxygen8  {for op8 series} |
