@@ -9,7 +9,7 @@ env:
   ROM_URL: https://dl.google.com/dl/android/aosp/sargo-rq1a.210105.002-factory-48e2ceb8.zip
   ROM_NAME: Pixel
   FIRMWAREZIPNAME: sargo-rq1a.210105.002-factory-48e2ceb8.zip
-  ZIP_NAME: Pixel-3a-@PriyoGSI-16-01-2021
+  ZIP_NAME: Pixel-3a-@PriyoGSI-17-01-2021
   SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
@@ -84,7 +84,7 @@ jobs:
               expect \"sftp> \"
               send \"${{ secrets.SFDIRA1 }}\r\"
               set timeout -1
-              send \"put $ZIP_NAME-GSI-Aonly-priyogsi.7z\r\"
+              send \"put $ZIP_NAME-GSI-Aonly.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
@@ -96,7 +96,7 @@ jobs:
               expect \"sftp> \"
               send \"${{ secrets.SFDIRA1 }}\r\"
               set timeout -1
-              send \"put $ZIP_NAME-GSI-AB-priyogsi.7z\r\"
+              send \"put $ZIP_NAME-GSI-AB.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
