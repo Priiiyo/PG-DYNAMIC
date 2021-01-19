@@ -6,11 +6,11 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: http://bigota.d.miui.com/V12.1.1.0.RFNMIXM/miui_TOCOGlobal_V12.1.1.0.RFNMIXM_2ea6513d0f_11.0.zip
-  ROM_NAME: MIUI
-  FIRMWAREZIPNAME: miui_TOCOGlobal_V12.1.1.0.RFNMIXM_2ea6513d0f_11.0.zip
-  ZIP_NAME: MIUI-MN10Lite-@PriyoGSI-18-01-2021
-  SCRIPT_NAME: MIUIRDP
+  ROM_URL: https://dl.google.com/dl/android/aosp/redfin-rq1a.210105.003-factory-54539ec0.zip
+  ROM_NAME: Pixel
+  FIRMWAREZIPNAME: redfin-rq1a.210105.003-factory-54539ec0.zip
+  ZIP_NAME: Pixel-P5-@PriyoGSI-18-01-2021
+  SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
