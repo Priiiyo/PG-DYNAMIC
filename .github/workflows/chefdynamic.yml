@@ -6,10 +6,10 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/bramble-rq1a.210105.003-factory-a20c2ff3.zip
+  ROM_URL: https://dl.google.com/dl/android/aosp/sunfish-rq1a.210105.002-factory-0d4aed85.zip
   ROM_NAME: Pixel
-  FIRMWAREZIPNAME: bramble-rq1a.210105.003-factory-a20c2ff3.zip
-  ZIP_NAME: Pixel-P4a-5G-@PriyoGSI-19-01-2021
+  FIRMWAREZIPNAME: sunfish-rq1a.210105.002-factory-0d4aed85.zip
+  ZIP_NAME: Pixel-P4a-@PriyoGSI-19-01-2021
   SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
