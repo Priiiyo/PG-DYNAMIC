@@ -6,11 +6,11 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/crosshatch-rq1d.210105.003-factory-7c671fb2.zip
-  ROM_NAME: Pixel
-  FIRMWAREZIPNAME: crosshatch-rq1d.210105.003-factory-7c671fb2.zip
+  ROM_URL: http://otafs-cost.coloros.com/RMX2072/RMX2071_11.A.18_11801510_202012290223/patch/CHN/RMX2071/RMX2071_11.A.18_11801510_202012290223/RMX2071_11_OTA_11801510_all_3ofIeEGqtsQ4_5f4dd0e7519.ozip
+  ROM_NAME: ColorOS
+  FIRMWAREZIPNAME: RMX2071_11.A.18_11801510_202012290223/patch/CHN/RMX2071/RMX2071_11.A.18_11801510_202012290223/RMX2071_11_OTA_11801510_all_3ofIeEGqtsQ4_5f4dd0e7519.ozip
   ZIP_NAME: Pixel-P3XL-@PriyoGSI-19-01-2021
-  SCRIPT_NAME: PIXELDP
+  SCRIPT_NAME: COLOROSDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
