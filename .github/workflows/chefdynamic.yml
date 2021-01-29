@@ -10,7 +10,7 @@ env:
   ROM_NAME: OxygenOS
   FIRMWAREZIPNAME: OnePlus7TProOxygen_13.W.09_OTA_009_all_2010191130_ac06386.zip
   ZIP_NAME: OxygenOS-OP7TPro-@PriyoGSI-29-01-2021
-  SCRIPT_NAME: dyn.sh
+  SCRIPT_NAME: dyn
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
