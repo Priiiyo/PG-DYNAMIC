@@ -6,11 +6,11 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://pdrive.priyo.workers.dev/0://OnePlus7TProOxygen_13.W.09_OTA_009_all_2010191130_ac06386.zip
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_13.W.45_GLO_045_2010191035/OnePlus7Oxygen_13.W.45_OTA_045_all_2010191035_0b7a.zip
   ROM_NAME: OxygenOS
-  FIRMWAREZIPNAME: OnePlus7TProOxygen_13.W.09_OTA_009_all_2010191130_ac06386.zip
-  ZIP_NAME: OxygenOS-OP7TPro-@PriyoGSI-29-01-2021
-  SCRIPT_NAME: dyn
+  FIRMWAREZIPNAME: OnePlus7Oxygen_13.W.45_GLO_045_2010191035/OnePlus7Oxygen_13.W.45_OTA_045_all_2010191035_0b7a.zip
+  ZIP_NAME: OxygenOS-OP7-@PriyoGSI-02-02-2021
+  SCRIPT_NAME: OOSDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
@@ -34,7 +34,7 @@ jobs:
             sudo -E apt-get -qq install python3
             sudo -E apt-get -qq install simg2img
             sudo apt-get install -y expect
-            git clone "https://github.com/Priiiyo/ErfanGSIs" ErfanGSIs
+            git clone "https://github.com/Priiiyo/PGTools-ErfanGSIs" ErfanGSIs
             sudo chmod -R 777 ErfanGSIs
             cd ErfanGSIs
             sudo bash setup.sh 
