@@ -6,10 +6,10 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/sargo-rq1a.210205.004-factory-cfe24f6e.zip
+  ROM_URL: https://dl.google.com/dl/android/aosp/bramble-rq1a.210205.004-factory-2cd0868f.zip
   ROM_NAME: Pixel
-  FIRMWAREZIPNAME: sargo-rq1a.210205.004-factory-cfe24f6e.zip
-  ZIP_NAME: Pixel-3a-@PriyoGSI-03-02-2021
+  FIRMWAREZIPNAME: bramble-rq1a.210205.004-factory-2cd0868f.zip
+  ZIP_NAME: Pixel-4a-@PriyoGSI-03-02-2021
   SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
