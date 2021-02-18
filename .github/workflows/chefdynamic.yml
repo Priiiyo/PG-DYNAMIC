@@ -6,10 +6,10 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/sunfish-rq1a.210205.004-factory-afba4501.zip
+  ROM_URL: https://dl.google.com/developers/android/sc/images/ota/blueline-ota-spp1.210122.020.a3-eba1062e.zip
   ROM_NAME: Pixel
-  FIRMWAREZIPNAME: sunfish-rq1a.210205.004-factory-afba4501.zip
-  ZIP_NAME: Pixel-4a-@PriyoGSI-11-02-2021
+  FIRMWAREZIPNAME: blueline-ota-spp1.210122.020.a3-eba1062e.zip
+  ZIP_NAME: Pixel-4a-@PriyoGSI-19-02-2021
   SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
