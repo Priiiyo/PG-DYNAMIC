@@ -44,7 +44,7 @@ jobs:
           
         - name: GENERATION OF BAKED GOODIES
           run: | 
-            cd ErfanGSIs && sudo ./$SCRIPT_NAME.sh $ROM_NAME $FIRMWAREZIPNAME && sudo umount system && sudo rm -rf system
+            cd ErfanGSIs && sudo ./$SCRIPT_NAME.sh $ROM_NAME $FIRMWAREZIPNAME && sudo umount system-old && sudo rm -rf system-old
             
             
         - name: MOUNTING THE SYSTEM
