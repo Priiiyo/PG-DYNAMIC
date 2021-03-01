@@ -10,7 +10,7 @@ env:
   ROM_NAME: Pixel
   FIRMWAREZIPNAME: bramble-spp1.210122.020.a3-factory-d0709df3.zip
   ZIP_NAME: PixelOS-Pixel3-@PriyoGSI-01-03-2021
-  SCRIPT_NAME: DP
+  SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
