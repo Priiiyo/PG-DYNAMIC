@@ -6,11 +6,11 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/NordOxygen/NordOxygen_14.O.13_GLO_013_2102040620/NordOxygen_14.O.13_OTA_013_all_2102040620_82e7f8c76.zip
-  ROM_NAME: OxygenOS
-  FIRMWAREZIPNAME: NordOxygen_14.O.13_OTA_013_all_2102040620_82e7f8c76.zip
-  ZIP_NAME: OxygenOS-Nord-@PriyoGSI-01-03-2021
-  SCRIPT_NAME: OOSDP
+  ROM_URL: https://dl.google.com/developers/android/sc/images/factory/bramble-spp1.210122.020.a3-factory-d0709df3.zip
+  ROM_NAME: Pixel
+  FIRMWAREZIPNAME: bramble-spp1.210122.020.a3-factory-d0709df3.zip
+  ZIP_NAME: PixelOS-Pixel3-@PriyoGSI-01-03-2021
+  SCRIPT_NAME: DP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
