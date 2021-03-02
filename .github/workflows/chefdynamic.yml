@@ -6,10 +6,10 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://dl.google.com/developers/android/sc/images/factory/bramble-spp1.210122.020.a3-factory-d0709df3.zip
+  ROM_URL: https://dl.google.com/dl/android/aosp/redfin-rq2a.210305.006-factory-8c28fafa.zip
   ROM_NAME: Pixel
-  FIRMWAREZIPNAME: bramble-spp1.210122.020.a3-factory-d0709df3.zip
-  ZIP_NAME: PixelOS-Pixel3-@PriyoGSI-01-03-2021
+  FIRMWAREZIPNAME: redfin-rq2a.210305.006-factory-8c28fafa.zip
+  ZIP_NAME: PixelOS-Pixel5-@PriyoGSI-02-03-2021
   SCRIPT_NAME: PIXELDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
