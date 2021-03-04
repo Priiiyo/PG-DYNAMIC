@@ -6,11 +6,11 @@ on:
       types: [started]
 #######################   CHANGE ONLY ROM_URL,ROM_NAME,FIRMWAREZIPANEM,ZIPNAME,SCRIPT_NAME  ###################################
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/redfin-rq2a.210305.006-factory-8c28fafa.zip
-  ROM_NAME: Pixel
-  FIRMWAREZIPNAME: redfin-rq2a.210305.006-factory-8c28fafa.zip
-  ZIP_NAME: PixelOS-Pixel5-@PriyoGSI-02-03-2021
-  SCRIPT_NAME: PIXELDP
+  ROM_URL: https://pdrive.priyo.workers.dev/0://xiaomi.eu_multi_HMK20MI9T_21.3.3_v12-11.zip
+  ROM_NAME: MIUI
+  FIRMWAREZIPNAME: xiaomi.eu_multi_HMK20MI9T_21.3.3_v12-11.zip
+  ZIP_NAME: MIUI-EU-@PriyoGSI-05-03-2021
+  SCRIPT_NAME: NUBIA-VOS-MIUIDP
   TZ: Asia/Bangladesh
   SFDIRA1: cd /home/pfs/project/priyogsis/PriyoFiles
   SFDIRA2: cd /home/pfs/project/priyogsis/PriyoDumps
